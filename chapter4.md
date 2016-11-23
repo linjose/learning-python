@@ -31,12 +31,12 @@ The number is  123 <type 'int‘>
 ```
   - 測試以下string會印出什麼
 ```
-print "Hello world!"        
-print "Hello\tworld!"       
-print "John's Treasure!"     
-print 'Hello world!'       
-print 'Hello\tworld!'      
-print 'John\'s "Treasure"!' 
+>>> print "Hello world!"        
+>>> print "Hello\tworld!"       
+>>> print "John's Treasure!"     
+>>> print 'Hello world!'       
+>>> print 'Hello\tworld!'      
+>>> print 'John\'s "Treasure"!' 
 ```
   - 練習:
 ```
@@ -48,21 +48,40 @@ applepen
 
 ###4-4.資料型態-容器
   - list 
-    1. 請將 John 換成 Mary
+    - 請將 John 換成 Mary
   ```
   mylist = ['My', 'name', 'is', 'John']
   ```
     2. 使用`mylist.append('')`在句子的末端加入禁嘆號，再`print`看會有什麼結果
     3. 用`" ".join(mylist)`印出變成句子
+  - set
+```
+>>> fast_food_kaohsiung = set(['MOS', "McDonald's", 'DanDan']) 
+>>> fast_food_taipei = {'McDonald\'s', 'MOS', 'TKK'}
+>>> 'DanDan' in fast_food_kaohsiung  
+True
+>>> fast_food_kaohsiung & fast_food_taipei    
+set(['MOS', "McDonald's"])
+>>> fast_food_kaohsiung | fast_food_taipei    
+set(['MOS', "McDonald's", 'DanDan', 'TKK'])
+>>> fast_food_kaohsiung - fast_food_taipei    
+set(['DanDan'])
+>>> fast_food_kaohsiung ^ fast_food_taipei    
+set(['DanDan', 'TKK'])
+>>> fast_food_kaohsiung > fast_food_taipei    
+False
+>>> fast_food_kaohsiung < fast_food_taipei 
+False 
+```
   - tuple
-    * 試試看修改值會怎麼樣
+    - 試試看修改值會怎麼樣
     ```
     t = (1, 2.0, "3", [4], (5))
     t[1] = 2
     ```
   - dict
-    * 用dict建立以下資料：
-      * 'name':'John'
-      * 'age':18
-      * 'phone':'0987-654-321'
+    - 用dict建立以下資料：
+      - 'name':'John'
+      - 'age':18
+      - 'phone':'0987-654-321'
 
