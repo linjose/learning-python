@@ -1,35 +1,35 @@
-# 4.¸ê®Æ«¬ºA»PÅÜ¼Æ
+# 4.è³‡æ–™å‹æ…‹èˆ‡è®Šæ•¸
 
-###4-1.°ò¥»¿é¥X
+###4-1.åŸºæœ¬è¼¸å‡º
 ```
 >>> name = "Henry"
 >>> age = 24
-# ¥i¥H¥Î , ¤À¹j¦h­ÓÅÜ¼Æ¤@°_¿é¥X
+# å¯ä»¥ç”¨ , åˆ†éš”å¤šå€‹è®Šæ•¸ä¸€èµ·è¼¸å‡º
 >>> print "Hello,",name,"is",age,"years old."
-# ¤]¥i¥H¥Î + ¦ı­nª`·N«¬ºA
->>> print "Hello, " + name + " is " + str(age) + " years old.¡¨
+# ä¹Ÿå¯ä»¥ç”¨ + ä½†è¦æ³¨æ„å‹æ…‹
+>>> print "Hello, " + name + " is " + str(age) + " years old.â€
 ```
-###4-2.°ò¥»¿é¤J
+###4-2.åŸºæœ¬è¼¸å…¥
 ```
 >>> s = input("Please enter a number: ")
 Please enter a number: 123
 >>> print "The number is ", s, s.__class__
-The number is  123 <type 'int¡¥>
+The number is  123 <type 'intâ€˜>
 ```
-###4-3.¸ê®Æ«¬ºA-¼Æ­È/¦r¦ê/¥¬ªL
-  * ´ú¸Õ¥H¤Uint, long, float, complex·|¦L¥X¤°»ò
+###4-3.è³‡æ–™å‹æ…‹-æ•¸å€¼/å­—ä¸²/å¸ƒæ—
+  - æ¸¬è©¦ä»¥ä¸‹int, long, float, complexæœƒå°å‡ºä»€éº¼
 ```
->>> type(1)      # 1 ¬O¤°»ò«¬ºA¡H
->>> type(1L)     # ¥[¤W L ©O¡H
+>>> type(1)      # 1 æ˜¯ä»€éº¼å‹æ…‹ï¼Ÿ
+>>> type(1L)     # åŠ ä¸Š L å‘¢ï¼Ÿ
 >>> type(2 ** 64 - 1) 
 >>> type(2 ** 64 + 1) 
->>> type(3.14)   # ¯BÂI¼Æ¬O float «¬ºA
->>> type(3 + 4j) # ¤ä´©½Æ¼Æªº complex «¬ºA
->>> 2 ** 100     # 2 ªº 100 ¦¸¤è
+>>> type(3.14)   # æµ®é»æ•¸æ˜¯ float å‹æ…‹
+>>> type(3 + 4j) # æ”¯æ´è¤‡æ•¸çš„ complex å‹æ…‹
+>>> 2 ** 100     # 2 çš„ 100 æ¬¡æ–¹
 >>> type(True)   
 >>> type('abc')
 ```
-  * ´ú¸Õ¥H¤Ustring·|¦L¥X¤°»ò
+  - æ¸¬è©¦ä»¥ä¸‹stringæœƒå°å‡ºä»€éº¼
 ```
 print "Hello world!"        
 print "Hello\tworld!"       
@@ -38,7 +38,7 @@ print 'Hello world!'
 print 'Hello\tworld!'      
 print 'John\'s "Treasure"!' 
 ```
-  * ½m²ß:
+  - ç·´ç¿’:
 ```
 >>> s = 'I have an apple, I have a pen.'
 >>> print s[...] + s[...]
@@ -46,22 +46,22 @@ applepen
 ```
 
 
-###4-4.¸ê®Æ«¬ºA-®e¾¹
-  * list 
-    1. ½Ğ±N John ´«¦¨ Mary
+###4-4.è³‡æ–™å‹æ…‹-å®¹å™¨
+  - list 
+    1. è«‹å°‡ John æ›æˆ Mary
   ```
   mylist = ['My', 'name', 'is', 'John']
   ```
-    2. ¨Ï¥Î`mylist.append('')`¦b¥y¤lªº¥½ºİ¥[¤J¸T¹Ä¸¹¡A¦A`print`¬İ·|¦³¤°»òµ²ªG
-    3. ¥Î`" ".join(mylist)`¦L¥XÅÜ¦¨¥y¤l
-  * tuple
-    * ¸Õ¸Õ¬İ­×§ï­È·|«ç»ò¼Ë
+    2. ä½¿ç”¨`mylist.append('')`åœ¨å¥å­çš„æœ«ç«¯åŠ å…¥ç¦å˜†è™Ÿï¼Œå†`print`çœ‹æœƒæœ‰ä»€éº¼çµæœ
+    3. ç”¨`" ".join(mylist)`å°å‡ºè®Šæˆå¥å­
+  - tuple
+    * è©¦è©¦çœ‹ä¿®æ”¹å€¼æœƒæ€éº¼æ¨£
     ```
     t = (1, 2.0, "3", [4], (5))
     t[1] = 2
     ```
-  * dict
-    * ¥Îdict«Ø¥ß¥H¤U¸ê®Æ¡G
+  - dict
+    * ç”¨dictå»ºç«‹ä»¥ä¸‹è³‡æ–™ï¼š
       * 'name':'John'
       * 'age':18
       * 'phone':'0987-654-321'
