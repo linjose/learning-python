@@ -1,17 +1,17 @@
-# 3.∞ı¶ÊPythonµ{¶°
+# 3.Âü∑Ë°åPythonÁ®ãÂºè
 
 ###3-1. Python Shell
-  * øÈ§J `python`
-  * ¡‰§J `print "hello world!"`
+  - Ëº∏ÂÖ• `python`
+  - ÈçµÂÖ• `print "hello world!"`
 
 ###3-2. Execute Python File
-  * øÈ§J `vim hello.py`
-  * ¡‰§J 
+  - Ëº∏ÂÖ• `vim hello.py`
+  - ÈçµÂÖ• 
 ```
 #!/usr/bin/python
 print "hello world"
 ```
 
 ###3-3. import this
-  * øÈ§J `python`
-  * ¡‰§J `import this`
+  - Ëº∏ÂÖ• `python`
+  - ÈçµÂÖ• `import this`
