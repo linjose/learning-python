@@ -1,14 +1,14 @@
-# 13.»{ÃÑ¼Ð·Ç¼Ò²Õ®w
+# 13.èªè­˜æ¨™æº–æ¨¡çµ„åº«
 
-###13-1.½m²ß¨Ï¥Î¼Ð·Ç¼Ò²Õ®w
-  * °Ñ¦Ò©x¤è¼Ð·Ç¼Ò²Õ®w¤å¥ó: https://docs.python.org/2/library/index.html
-  * ½m²ß¨Ï¥Î: `time`¡B`datetime`
-    * time
+###13-1.ç·´ç¿’ä½¿ç”¨æ¨™æº–æ¨¡çµ„åº«
+  - åƒè€ƒå®˜æ–¹æ¨™æº–æ¨¡çµ„åº«æ–‡ä»¶: https://docs.python.org/2/library/index.html
+  - ç·´ç¿’ä½¿ç”¨: `time`ã€`datetime`
+    - time
 ```
 >>> import time
 >>> time.time()
 ```
-    * datetime
+    - datetime
 ```
 >>> import datetime
 >>> now = datetime.datetime.now()
@@ -24,12 +24,12 @@
 
 
 
-###13-2.¤U¸ü¼Ò²Õ®w
-  * ¦b ubuntu ¤¤¤U¸ü `psutil`¡A¨Ï¥Î¥¦¼gºÊ±±¨t²Î:
-    * ¤èªk¤@: `sudo apt-get install python-psutil`
-    * ¤èªk¤G: `sudo pip install psutil`
-  * ¨Ï¥Î»¡©ú: https://pypi.python.org/pypi/psutil
-  * ½d¨Òµ{¦¡:
+###13-2.ä¸‹è¼‰æ¨¡çµ„åº«
+  - åœ¨ ubuntu ä¸­ä¸‹è¼‰ `psutil`ï¼Œä½¿ç”¨å®ƒå¯«ç›£æŽ§ç³»çµ±:
+    - æ–¹æ³•ä¸€: `sudo apt-get install python-psutil`
+    - æ–¹æ³•äºŒ: `sudo pip install psutil`
+  - ä½¿ç”¨èªªæ˜Ž: https://pypi.python.org/pypi/psutil
+  - ç¯„ä¾‹ç¨‹å¼:
 ```
 >>> import psutil
 >>> psutil.cpu_times()
