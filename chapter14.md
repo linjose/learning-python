@@ -1,28 +1,28 @@
-# 14.¹ê§@ÅéÅç
+# 14.å¯¦ä½œé«”é©—
 
-###14-1.³s±µ Open Data
-#### step 1. ¿ï¾Ü¸ê®Æ·½
-¥H¡u»O¥_¥«¤µ¤é¬I¤u¸ê°T¡vAPI¦s¨ú¬°¨Ò¡A¥»¨Ò¹ê§@¿ï¾Üjson¸ê®Æ«¬ºA¡C
-  * TPE OD: http://data.taipei/opendata/datalist/datasetMeta/outboundDesc?id=4d29818c-a3ee-425d-b88a-22ac0c24c712&rid=201d8ae8-dffc-4d17-ae1f-e58d8a95b162
-  * JSON Pretty ¤u¨ã: http://json.parser.online.fr/
+###14-1.é€£æŽ¥ Open Data
+#### step 1. é¸æ“‡è³‡æ–™æº
+ä»¥ã€Œè‡ºåŒ—å¸‚ä»Šæ—¥æ–½å·¥è³‡è¨Šã€APIå­˜å–ç‚ºä¾‹ï¼Œæœ¬ä¾‹å¯¦ä½œé¸æ“‡jsonè³‡æ–™åž‹æ…‹ã€‚
+  - TPE OD: http://data.taipei/opendata/datalist/datasetMeta/outboundDesc?id=4d29818c-a3ee-425d-b88a-22ac0c24c712&rid=201d8ae8-dffc-4d17-ae1f-e58d8a95b162
+  - JSON Pretty å·¥å…·: http://json.parser.online.fr/
 
 
 
-#### step2.¿ï¾Ü¿é¥X¸ê®Æ
-1. ¥»ÃD½m²ß¿é¤J«Ø¥ß¤@ÀÉ®× `workday.py`
-2. ¿é¤J«ü©w¤é´Á¡A¦^¶Ç¸Ó¤é´Á¬O§_¦³¬I¤uµ²ªG
-  * `python workday.py 1051119`
-  * `python workday.py 1060413`
-3. ³]­p¿é¥X¸ê°T¥]§t:
-  * ¬I¤u³æ¦ì(APP_NAME): `str`
-  * ¦æ¬F°Ï(C_NAME): `str`
-  * ¬I¤u¦ì¸m(ADDR): `str`
-  * ¤uµ{¤º®e(NPURP): `str`
-  * ®Ö­ã¬I¤u°_¤é(CB_DA): `int`
-  * ®Ö­ã¬I¤u¨´¤é(CE_DA): `int`
+#### step2.é¸æ“‡è¼¸å‡ºè³‡æ–™
+1. æœ¬é¡Œç·´ç¿’è¼¸å…¥å»ºç«‹ä¸€æª”æ¡ˆ `workday.py`
+2. è¼¸å…¥æŒ‡å®šæ—¥æœŸï¼Œå›žå‚³è©²æ—¥æœŸæ˜¯å¦æœ‰æ–½å·¥çµæžœ
+  - `python workday.py 1051119`
+  - `python workday.py 1060413`
+3. è¨­è¨ˆè¼¸å‡ºè³‡è¨ŠåŒ…å«:
+  - æ–½å·¥å–®ä½(APP_NAME): `str`
+  - è¡Œæ”¿å€(C_NAME): `str`
+  - æ–½å·¥ä½ç½®(ADDR): `str`
+  - å·¥ç¨‹å…§å®¹(NPURP): `str`
+  - æ ¸å‡†æ–½å·¥èµ·æ—¥(CB_DA): `int`
+  - æ ¸å‡†æ–½å·¥è¿„æ—¥(CE_DA): `int`
 
-#### step3.¨Ï¥Î¥H¤Uµ{¦¡½X±µ¤WAPI
-¨Ï¥Îurllib¼Ò²Õ¨ú±oAPI¦^¶Ç¤º®e¡A¦A¥Îjson¼Ò²Õ¸ÑªR¡C
+#### step3.ä½¿ç”¨ä»¥ä¸‹ç¨‹å¼ç¢¼æŽ¥ä¸ŠAPI
+ä½¿ç”¨urllibæ¨¡çµ„å–å¾—APIå›žå‚³å…§å®¹ï¼Œå†ç”¨jsonæ¨¡çµ„è§£æžã€‚
 ```
 import json
 import urllib
@@ -33,15 +33,15 @@ response = urllib.urlopen(url)
 data = json.loads(response.read())
 print data
 ```
-#### step4.³]­p¦¨¦Û¤vªº¥\¯à
-¦pstep2©Ò±Ô­z¡A¸ÑªR`data`¡A°µ¦¨¥i¬d¸ß¬Y®É¬q¦³­þ¨Ç¸ô¬q¦b¬I¤u¡C
+#### step4.è¨­è¨ˆæˆè‡ªå·±çš„åŠŸèƒ½
+å¦‚step2æ‰€æ•˜è¿°ï¼Œè§£æž`data`ï¼Œåšæˆå¯æŸ¥è©¢æŸæ™‚æ®µæœ‰å“ªäº›è·¯æ®µåœ¨æ–½å·¥ã€‚
 ```
 #-*- coding: utf-8 -*-
 import json
 import urllib
 import sys
 
-# argv ¨ú±o¬d¸ß¤é´Á
+# argv å–å¾—æŸ¥è©¢æ—¥æœŸ
 
 url = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=201d8ae8-dffc-4d17-ae1f-e58d8a95b162"
 
@@ -49,27 +49,27 @@ response = urllib.urlopen(url)
 data = json.loads(response.read())
 print data
 
-# ¥Î for °j°é¸ÑªR¸ê®Æ
-# ¥H¤U¨â¶µ©ñ¦bif±ø¥ó¦¡¤¤¡A§@¬°¬d¸ß±ø¥ó¶µ¥Ø:
+# ç”¨ for è¿´åœˆè§£æžè³‡æ–™
+# ä»¥ä¸‹å…©é …æ”¾åœ¨ifæ¢ä»¶å¼ä¸­ï¼Œä½œç‚ºæŸ¥è©¢æ¢ä»¶é …ç›®:
 # data['result']['results'][i]['CB_DA']
 # data['result']['results'][i]['CE_DA']
-# ­Y²Å¦X±ø¥ó¡A«h¿é¥X¬I¤u³æ¦ì¡B¦æ¬F°Ï¡B¬I¤u¦ì¸m¡B¤uµ{¤º®e¡B®Ö­ã¬I¤u°_¤é¡B®Ö­ã¬I¤u¨´¤é¡C
+# è‹¥ç¬¦åˆæ¢ä»¶ï¼Œå‰‡è¼¸å‡ºæ–½å·¥å–®ä½ã€è¡Œæ”¿å€ã€æ–½å·¥ä½ç½®ã€å·¥ç¨‹å…§å®¹ã€æ ¸å‡†æ–½å·¥èµ·æ—¥ã€æ ¸å‡†æ–½å·¥è¿„æ—¥ã€‚
 ```
 
-#### step5.¥i¥H¥]¦¨json®æ¦¡¿é¥X
+#### step5.å¯ä»¥åŒ…æˆjsonæ ¼å¼è¼¸å‡º
 ```
 res = []
 for ... :
     if ... :
-        res.append({u'¬I¤u³æ¦ì':raw[i]['APP_NAME'], u'¬I¤u¦ì¸m':raw[i]['ADDR']}...)
+        res.append({u'æ–½å·¥å–®ä½':raw[i]['APP_NAME'], u'æ–½å·¥ä½ç½®':raw[i]['ADDR']}...)
 
 print json.dumps(res).decode('unicode_escape')
 ```
 
 
-###14-2.³s±µ Open Data CSV
-  * §ä¤@­Ó CSV ªº Open Data¡A¨Ã¥B¥Î `wget http://...../xxx.csv` ¤U¸ü¦ÜVM¤¤
-  * °Ñ¦Ò¥H¤Uµ{¦¡½X¡A¹ê§@Åª¼gOpen Data CSVÀÉªºµ{¦¡(`delimiter`¬O¤À¹j²Å¸¹(Äæ»PÄæªº¤À¹j)¡A`quotechar`¬O§âÄæ¦ì¤º®e¥]°_¨Óªº²Å¸¹): 
+###14-2.é€£æŽ¥ Open Data CSV
+  - æ‰¾ä¸€å€‹ CSV çš„ Open Dataï¼Œä¸¦ä¸”ç”¨ `wget http://...../xxx.csv` ä¸‹è¼‰è‡³VMä¸­
+  - åƒè€ƒä»¥ä¸‹ç¨‹å¼ç¢¼ï¼Œå¯¦ä½œè®€å¯«Open Data CSVæª”çš„ç¨‹å¼(`delimiter`æ˜¯åˆ†éš”ç¬¦è™Ÿ(æ¬„èˆ‡æ¬„çš„åˆ†éš”)ï¼Œ`quotechar`æ˜¯æŠŠæ¬„ä½å…§å®¹åŒ…èµ·ä¾†çš„ç¬¦è™Ÿ): 
 ```
 >>> import csv
 >>> with open('eggs.csv', 'rb') as csvfile:
