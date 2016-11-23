@@ -1,29 +1,28 @@
-# 6.¹Bºâ¦¡»P³¯­z
+# 6.é‹ç®—å¼èˆ‡é™³è¿°
 
-### 6-1.°Ê¤â¾Ş§@
-
-1. °µ¤@­ÓÂ²©ö­pºâ¾÷
-2. «Ø¥ß¤@ÀÉ®×¡A¦W¬° `mycal.py`
-3. ¨Ï¥Î `sys.argv[]` ¨ú±o `mycal.py` ªº°Ñ¼Æ
-4. °Ñ¼Æªº¿é¤J¤è¦¡¬° `python mycal.py 1 + 1`
+### 6-1.å‹•æ‰‹æ“ä½œ
+1. åšä¸€å€‹ç°¡æ˜“è¨ˆç®—æ©Ÿ
+2. å»ºç«‹ä¸€æª”æ¡ˆï¼Œåç‚º `mycal.py`
+3. ä½¿ç”¨ `sys.argv[]` å–å¾— `mycal.py` çš„åƒæ•¸
+4. åƒæ•¸çš„è¼¸å…¥æ–¹å¼ç‚º `python mycal.py 1 + 1`
 
 ```
 import sys
 
-operand1 = sys.argv[1] # ­×§ïtype
+operand1 = sys.argv[1] # ä¿®æ”¹type
 operator = sys.argv[2] 
-operand2 = sys.argv[3] # ­×§ïtype
+operand2 = sys.argv[3] # ä¿®æ”¹type
 
-print sys.argv[0] #¬İ¬İµ²ªG¬O¤°»ò
+print sys.argv[0] #çœ‹çœ‹çµæœæ˜¯ä»€éº¼
 
 if operator is '+':
-    # ½Ğ¦b¦¹¦C¦Lµ²ªG
+    # è«‹åœ¨æ­¤åˆ—å°çµæœ
 elif operator is '-':
-    # ½Ğ¦b¦¹¦C¦Lµ²ªG
+    # è«‹åœ¨æ­¤åˆ—å°çµæœ
 elif operator is '*':
-    # ½Ğ¦b¦¹¦C¦Lµ²ªG
+    # è«‹åœ¨æ­¤åˆ—å°çµæœ
 elif operator is '/':
-    # ½Ğ¦b¦¹¦C¦Lµ²ªG
+    # è«‹åœ¨æ­¤åˆ—å°çµæœ
 else:
     print "ERROR"
 ```
