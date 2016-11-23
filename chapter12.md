@@ -1,17 +1,17 @@
-# 12.¦Û©w¸q¼Ò²Õ
+# 12.è‡ªå®šç¾©æ¨¡çµ„
 
-###12-1.import ¦Û¦æ¶}µo¨ç¦¡
-±N¦¹¬qµ{¦¡Àx¦s¬° mygcd.py 
+###12-1.import è‡ªè¡Œé–‹ç™¼å‡½å¼
+å°‡æ­¤æ®µç¨‹å¼å„²å­˜ç‚º mygcd.py 
 ```
 def gcd(x,y):
-	g = y
-	while x > 0:
-		g = x
-		x = y % x
-		y = g
-	return g
+    g = y
+    while x > 0:
+        g = x
+        x = y % x
+        y = g
+    return g
 ```
-¨Ã¨Ï¥Î¤§
+ä¸¦ä½¿ç”¨ä¹‹
 ```
 import mygcd
 ...
