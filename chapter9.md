@@ -1,16 +1,16 @@
-# 9.�禡/���O
+# 9.函式/類別
 
 ###9-1.function
-  * �s�@�@�ӷ|�C�La,b�ѼƬ�a+b��function
+  - 製作一個會列印a,b參數為a+b的function
 
 ###9-2.class
-  * �s�@�@�Ӧ�set_para�Ѽ�a,b�w�]�Ȭ�22,33�A�H�Φ�add_para�N��Ƭۥ[�� class
+  - 製作一個有set_para參數a,b預設值為22,33，以及有add_para將兩數相加的 class
 ```
 class Demo:
-�@�@def set_para(...):
-�@�@�@�@self.a = ...  
-�@�@def add_para(...):
-�@�@�@�@return ...
+　　def set_para(...):
+　　　　self.a = ...  
+　　def add_para(...):
+　　　　return ...
 ```
 ```
 d = Demo()
