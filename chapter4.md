@@ -48,14 +48,14 @@ applepen
 
 ###4-4.資料型態-容器
   - list 
-    - 請將 John 換成 Mary
-  ```
-  mylist = ['My', 'name', 'is', 'John']
-  ```
+    1. 請將 John 換成 Mary
+    ```
+    mylist = ['My', 'name', 'is', 'John']
+    ```
     2. 使用`mylist.append('')`在句子的末端加入禁嘆號，再`print`看會有什麼結果
     3. 用`" ".join(mylist)`印出變成句子
   - set
-```
+    ```
 >>> fast_food_kaohsiung = set(['MOS', "McDonald's", 'DanDan']) 
 >>> fast_food_taipei = {'McDonald\'s', 'MOS', 'TKK'}
 >>> 'DanDan' in fast_food_kaohsiung  
@@ -72,7 +72,7 @@ set(['DanDan', 'TKK'])
 False
 >>> fast_food_kaohsiung < fast_food_taipei 
 False 
-```
+    ```
   - tuple
     - 試試看修改值會怎麼樣
     ```
