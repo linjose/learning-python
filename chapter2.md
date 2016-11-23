@@ -1,21 +1,21 @@
-# 2.Python¶}µoÀô¹Ò¤¶²Ğ»P¦w¸Ë
+# 2.Pythoné–‹ç™¼ç’°å¢ƒä»‹ç´¹èˆ‡å®‰è£
 
-###2-1.¦bWindows¦w¸ËPython 2.x
-  * ½Ğ¨£¥Ü½d
+###2-1.åœ¨Windowså®‰è£Python 2.x
+  - è«‹è¦‹ç¤ºç¯„
 
-###2-2.¦bWindows¦w¸ËPython 3.x
-  * ½Ğ¨£¥Ü½d
+###2-2.åœ¨Windowså®‰è£Python 3.x
+  - è«‹è¦‹ç¤ºç¯„
 
-###2-3.¦bVirtualBox«Ø¥ßLinuxÀô¹Ò
-  * ¦w¸ËOracle VM VirtualBox¡A§¹¦¨«á±Ò°Ê 
-  * ÂI¿ï`ÀÉ®×(F)` > `¶×¤JÀ³¥Î¸Ë¸m(I)`
-  * ±N `learning-python.ova `¶×¤J¡A¨ÃÂI¿ï`¤U¤@¨B`
-  * ¤Ä¿ï`­«·sªì©l¤Æ©Ò¦³ºô¸ô¥dªºMAC¦ì¸m(R)`¡A¨ÃÂI¿ï`¶×¤J`¡C
-  * §¹¦¨¶×¤J«á¡A±Ò°Ê`ubuntu-14.04.5-desktop`
-  * µn¤J Ubuntu (±b¸¹/±K½X:ubuntu/ubuntu)
-  * ¥´¶}`Terminal`¡A¿é¤J`ifconfig`¡A¬d¬İip¦ì¸m`192.168.56.x`
+###2-3.åœ¨VirtualBoxå»ºç«‹Linuxç’°å¢ƒ
+  - å®‰è£Oracle VM VirtualBoxï¼Œå®Œæˆå¾Œå•Ÿå‹• 
+  - é»é¸`æª”æ¡ˆ(F)` > `åŒ¯å…¥æ‡‰ç”¨è£ç½®(I)`
+  - å°‡ `learning-python.ova `åŒ¯å…¥ï¼Œä¸¦é»é¸`ä¸‹ä¸€æ­¥`
+  - å‹¾é¸`é‡æ–°åˆå§‹åŒ–æ‰€æœ‰ç¶²è·¯å¡çš„MACä½ç½®(R)`ï¼Œä¸¦é»é¸`åŒ¯å…¥`ã€‚
+  - å®ŒæˆåŒ¯å…¥å¾Œï¼Œå•Ÿå‹•`ubuntu-14.04.5-desktop`
+  - ç™»å…¥ Ubuntu (å¸³è™Ÿ/å¯†ç¢¼:ubuntu/ubuntu)
+  - æ‰“é–‹`Terminal`ï¼Œè¼¸å…¥`ifconfig`ï¼ŒæŸ¥çœ‹ipä½ç½®`192.168.56.x`
 
-###2-4.¦bLinux Ubuntu¨Ï¥ÎPython
-  * ¨Ï¥Î pietty µn¤J Ubuntu
-  * IP: `192.168.56.x` / Port: `22`
-  * ¿é¤J `python`
+###2-4.åœ¨Linux Ubuntuä½¿ç”¨Python
+  - ä½¿ç”¨ pietty ç™»å…¥ Ubuntu
+  - IP: `192.168.56.x` / Port: `22`
+  - è¼¸å…¥ `python`
